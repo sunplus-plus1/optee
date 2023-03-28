@@ -7,3 +7,4 @@ bin/
 optee_os/out
 optee_client/out
 optee_examples/hello_world/ta/dyn_list
+optee_examples/random/ta/dyn_list

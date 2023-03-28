@@ -1,12 +1,11 @@
-CROSS_C = /home/haiq.tang/new/crossgcc/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-
 TEEC_EXPORT = ../../../optee_client/out/export/usr
-CC      = $(CROSS_C)gcc
-LD      = $(CROSS_C)ld
-AR      ?= $(CROSS_C)ar
-NM      ?= $(CROSS_C)nm
-OBJCOPY ?= $(CROSS_C)objcopy
-OBJDUMP ?= $(CROSS_C)objdump
-READELF ?= $(CROSS_C)readelf
+CC      = $(CROSS_COMPILE)gcc
+LD      = $(CROSS_COMPILE)ld
+AR      ?= $(CROSS_COMPILE)ar
+NM      ?= $(CROSS_COMPILE)nm
+OBJCOPY ?= $(CROSS_COMPILE)objcopy
+OBJDUMP ?= $(CROSS_COMPILE)objdump
+READELF ?= $(CROSS_COMPILE)readelf
 
 OBJS = main.o
 
